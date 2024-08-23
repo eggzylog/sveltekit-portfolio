@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+	@apply bg-custom-light-bg; /* Apply the light background by default */
+}
+
+.dark body {
+	@apply bg-custom-dark-bg; /* Apply the dark background when dark mode is active */
+}
