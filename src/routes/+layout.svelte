@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { Footer, Header } from '$lib/components';
+	import { Footer, Header } from '@components';
 	import '../app.css';
 
 	export let data: PageData;
@@ -15,7 +15,7 @@
 
 <div class="grid h-screen grid-rows-[auto_1fr_auto]">
 	<Header sitename={data.sitename} routes={data.routes} />
-	<div class="container px-8 py-4">
+	<div class="container mx-auto px-8 py-4">
 		<slot></slot>
 	</div>
 	<Footer author={data.author.name} github={data.github} />

@@ -1,10 +1,5 @@
-import { author, github, sitename, routes } from '$lib/constants';
+import { constants } from '@constants';
 
 export const load = () => {
-	return {
-		author,
-		github,
-		sitename,
-		routes
-	};
+	return { ...constants };
 };

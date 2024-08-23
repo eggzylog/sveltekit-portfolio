@@ -1,5 +1,5 @@
 {
-	"AUTHOR": {
+	"author": {
 		"name": "Joven Victor Logo",
 		"nickname": "Benok",
 		"email": "jovenvictorlogo@gmail.com",
@@ -8,13 +8,13 @@
 		"city": "Calamba City",
 		"country": "Philippines"
 	},
-	"SITENAME": "benok.site",
-	"ROUTES": [
+	"sitename": "portfolio.benok.site",
+	"routes": [
 		{ "name": "About", "href": "/about" },
 		{ "name": "Projects", "href": "/projects" },
 		{ "name": "Contact", "href": "/contact" }
 	],
-	"GITHUB": {
+	"github": {
 		"name": "eggzylog",
 		"link": "https://github.com/eggzylog"
 	}
