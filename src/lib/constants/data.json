@@ -1,0 +1,21 @@
+{
+	"AUTHOR": {
+		"name": "Joven Victor Logo",
+		"nickname": "Benok",
+		"email": "jovenvictorlogo@gmail.com",
+		"role": "Software Engineer",
+		"role2": "Full-stack Web Developer",
+		"city": "Calamba City",
+		"country": "Philippines"
+	},
+	"SITENAME": "benok.site",
+	"ROUTES": [
+		{ "name": "About", "href": "/about" },
+		{ "name": "Projects", "href": "/projects" },
+		{ "name": "Contact", "href": "/contact" }
+	],
+	"GITHUB": {
+		"name": "eggzylog",
+		"link": "https://github.com/eggzylog"
+	}
+}
