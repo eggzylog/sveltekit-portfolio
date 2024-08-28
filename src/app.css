@@ -3,9 +3,38 @@
 @import 'tailwindcss/utilities';
 
 body {
-	@apply bg-custom-light-bg; /* Apply the light background by default */
+	position: relative;
+	min-height: 100vh;
 }
 
-.dark body {
-	@apply bg-custom-dark-bg; /* Apply the dark background when dark mode is active */
+html.dark body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.15;
+	z-index: -1;
+	pointer-events: none;
+}
+
+html:not(.dark) body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.02;
+	z-index: -1;
+	pointer-events: none;
 }

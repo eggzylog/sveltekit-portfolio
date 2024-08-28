@@ -1,6 +1,7 @@
 import { join } from 'path';
 import type { Config } from 'tailwindcss';
 import typography from '@tailwindcss/typography';
+import { benokTheme } from './benok-theme';
 
 import { skeleton } from '@skeletonlabs/tw-plugin';
 
@@ -24,7 +25,9 @@ const config = {
 	plugins: [
 		typography,
 		skeleton({
-			themes: { preset: ['skeleton'] }
+			themes: {
+				custom: [benokTheme]
+			}
 		})
 	]
 } satisfies Config;
